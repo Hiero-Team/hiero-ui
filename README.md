@@ -1,10 +1,12 @@
 # Hiero-UI
 
-![alt text](image.png)
 
 ## Overview
 
 Hiero-UI is a React-based UI package designed specifically for Hiero developers to easily integrate Hiero Auth into their applications. This package provides pre-built components and utilities to streamline the process of adding authentication and authorization features using Hiero's authentication system.
+
+![alt text](image.png)
+
 
 ## Features
 
