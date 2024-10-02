@@ -27,27 +27,35 @@ yarn add @hiero/ui
 
 ## Usage
 
-Here's a quick example of how to use a Hiero-UI component in your React application:
+Here's a quick example of how to use the `HieroCheckoutButton` component in your React application:
 
 ```jsx
 import React from 'react';
-import { HieroLoginButton } from '@hiero/ui';
+import { HieroCheckoutButton } from '@hiero/ui';
 
 function App() {
-  const handleLoginSuccess = () => {
-    // Handle the successful login here
-  };
-
   return (
     <div>
       <h1>Welcome to My App</h1>
-      <HieroLoginButton onSuccess={handleLoginSuccess} />
+      <HieroCheckoutButton 
+        appName="your-app-name"
+        redirectUrl="https://your-app.com/success"
+        email="user@example.com" // Optional
+      />
     </div>
   );
 }
 
 export default App;
 ```
+
+The `HieroCheckoutButton` component accepts the following props:
+
+- `appName` (required): The name of your application registered with Hiero.
+- `redirectUrl` (required): The URL to redirect to after successful checkout.
+- `email` (optional): Pre-fill the user's email if known.
+
+When clicked, the button will redirect the user to the Hiero checkout page with the provided parameters.
 
 For more detailed usage instructions and component documentation, please refer to our [official documentation](https://hiero.gl/docs)
 
