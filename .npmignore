@@ -1,4 +1,9 @@
-src
+# Keep the src directory
+# src
 tsconfig.json
 .npmignore
 package-lock.json
+
+# Add these lines to ignore unnecessary files
+node_modules
+*.log

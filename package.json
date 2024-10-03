@@ -1,15 +1,16 @@
 {
-  "name": "hiero-ui",
+  "name": "hiero",
   "version": "0.0.9",
-  "description": "hiero checkout",
+  "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublishOnly": "npm run build"
   },
-  "author": "Michael Holborn & Hiero team",
-  "license": "MIT",
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
@@ -19,16 +20,6 @@
     "@types/react-dom": "^18.3.0",
     "typescript": "^5.6.2"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Hiero-Team/hiero-ui.git"
-  },
-  "keywords": [
-    "hiero",
-    "checkout",
-    "ui",
-    "react"
-  ],
   "peerDependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
