@@ -20,13 +20,13 @@ Hiero-UI is a React-based UI package designed specifically for Hiero developers 
 To install Hiero-UI in your project, run:
 
 ```bash
-npm install @hiero/ui
+npm install hiero-ui
 ```
 
 Or using yarn:
 
 ```bash
-yarn add @hiero/ui
+yarn add hiero-ui
 ```
 
 ## Usage
@@ -35,7 +35,7 @@ Here's a quick example of how to use the `HieroCheckoutButton` component in your
 
 ```jsx
 import React from 'react';
-import { HieroCheckoutButton } from '@hiero/ui';
+import { HieroCheckoutButton } from 'hiero-ui';
 
 function App() {
   return (
