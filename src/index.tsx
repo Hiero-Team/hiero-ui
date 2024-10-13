@@ -10,7 +10,7 @@ interface HieroCheckoutButtonProps {
 const HieroCheckoutButton: React.FC<HieroCheckoutButtonProps> = ({ appName, redirectUrl, email }) => {
   const handleCheckout = () => {
     const encodedRedirectUrl = encodeURIComponent(redirectUrl);
-    let checkoutUrl = `https://hiero.gl/a/${appName}?redirect_url=${encodedRedirectUrl}`;
+    let checkoutUrl = `https://hiero.gl/${appName}?redirect_url=${encodedRedirectUrl}`;
     if (email) {
       checkoutUrl += `&email=${encodeURIComponent(email)}`;
     }
