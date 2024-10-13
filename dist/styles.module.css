@@ -1,0 +1,74 @@
+.checkoutButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.3s;
+}
+
+.iconWrapper {
+  width: 5rem;
+  height: 5rem;
+  background-color: black;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.checkoutButton:hover .iconWrapper {
+  transform: scale(1.1);
+  box-shadow: 0 0 0 4px #facc15, 8px 8px 0px 0px rgba(250,204,21,0.5);
+}
+
+.checkoutButton:focus .iconWrapper {
+  outline: none;
+  box-shadow: 0 0 0 4px #facc15, 0 0 0 8px rgba(0,0,0,0.3);
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.checkoutButton:hover .icon {
+  transform: scale(1.1) rotate(12deg);
+}
+
+.textWrapper {
+  display: flex;
+  align-items: baseline;
+  margin-top: 0.5rem;
+  font-family: Arial, sans-serif;
+  white-space: nowrap;
+}
+
+.checkoutText {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #666;
+  margin-right: 0.25rem;
+}
+
+.hieroText {
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: #000;
+}
+
+@media (min-width: 640px) {
+  .iconWrapper {
+    width: 6rem;
+    height: 6rem;
+  }
+  .checkoutText {
+    font-size: 1rem;
+  }
+  .hieroText {
+    font-size: 1.5rem;
+  }
+}
